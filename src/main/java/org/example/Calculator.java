@@ -1,27 +1,25 @@
 package org.example;
 
-import java.util.Scanner;
+
+import java.util.logging.Logger;
 
 class Operation {
-    int num1, num2;
+    int num1;
+    int num2;
 
-    public int getNum1() {
-        return num1;
-    }
+
 
     public void setNum1(int num1) {
         this.num1 = num1;
     }
 
-    public int getNum2() {
-        return num2;
-    }
 
     public void setNum2(int num2) {
         this.num2 = num2;
     }
 
     public int performOperation() {
+
         return 0;
     }
 }
@@ -56,24 +54,25 @@ class Division extends Operation {
 
 public class Calculator {
     public static void main(String[] args) {
+        Logger ou = Logger.getLogger("com.api.jar");
         Operation add = new Addition();
         add.setNum1(10);
         add.setNum2(5);
-        System.out.println("Addition: " + add.performOperation());
+        ou.info("Addition: " + add.performOperation());
 
         Operation subtract = new Subtraction();
         subtract.setNum1(10);
         subtract.setNum2(5);
-        System.out.println("Subtraction: " + subtract.performOperation());
+        ou.info("Subtraction: " + subtract.performOperation());
 
         Operation multiply = new Multiplication();
         multiply.setNum1(10);
         multiply.setNum2(5);
-        System.out.println("Multiplication: " + multiply.performOperation());
+        ou.info("Multiplication: " + multiply.performOperation());
 
         Operation divide = new Division();
         divide.setNum1(10);
         divide.setNum2(5);
-        System.out.println("Division: " + divide.performOperation());
+        ou.info("Division: " + divide.performOperation());
     }
 }
