@@ -9,7 +9,6 @@ class Operation {
     int num2;
 
 
-
     public void setNum1(int num1) {
         this.num1 = num1;
     }
@@ -20,8 +19,8 @@ class Operation {
     }
 
     public int performOperation() {
-final  int a=0;
-return a;
+
+        return 0;
     }
 }
 
@@ -59,21 +58,21 @@ public class Calculator {
         Operation add = new Addition();
         add.setNum1(10);
         add.setNum2(5);
-        ou.log(Level.INFO,()->"Addition: " + add.performOperation());
+        ou.log(Level.INFO, () -> "Addition: " + add.performOperation());
 
         Operation subtract = new Subtraction();
         subtract.setNum1(10);
         subtract.setNum2(5);
-        ou.log(Level.INFO,()->"Subtraction: " + subtract.performOperation());
+        ou.log(Level.INFO, () -> "Subtraction: " + subtract.performOperation());
 
         Operation multiply = new Multiplication();
         multiply.setNum1(10);
         multiply.setNum2(5);
-        ou.log(Level.INFO,()->"Multiplication: " + multiply.performOperation());
+        ou.log(Level.INFO, () -> "Multiplication: " + multiply.performOperation());
 
         Operation divide = new Division();
         divide.setNum1(10);
         divide.setNum2(5);
-        ou.log(Level.INFO,()->"Division: " + divide.performOperation());
+        ou.log(Level.INFO, () -> "Division: " + divide.performOperation());
     }
 }
