@@ -5,6 +5,8 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 class Operation {
+    static final int a=0;
+
     int num1;
     int num2;
 
@@ -19,8 +21,7 @@ class Operation {
     }
 
     public int performOperation() {
-
-        return 0;
+        return a;
     }
 }
 
