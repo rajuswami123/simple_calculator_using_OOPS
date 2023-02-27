@@ -4,55 +4,6 @@ package org.example;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-class Operation {
-    static final int A=0;
-
-    int num1;
-    int num2;
-
-
-    public void setNum1(int num1) {
-        this.num1 = num1;
-    }
-
-
-    public void setNum2(int num2) {
-        this.num2 = num2;
-    }
-
-    public int performOperation() {
-        return A;
-    }
-}
-
-class Addition extends Operation {
-    @Override
-    public int performOperation() {
-        return num1 + num2;
-    }
-}
-
-class Subtraction extends Operation {
-    @Override
-    public int performOperation() {
-        return num1 - num2;
-    }
-}
-
-class Multiplication extends Operation {
-    @Override
-    public int performOperation() {
-        return num1 * num2;
-    }
-}
-
-class Division extends Operation {
-    @Override
-    public int performOperation() {
-        return num1 / num2;
-    }
-}
-
 public class Calculator {
     public static void main(String[] args) {
         Logger ou = Logger.getLogger("com.api.jar");
